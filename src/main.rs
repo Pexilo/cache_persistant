@@ -1,7 +1,8 @@
 use cache_exam::{Cache, CacheTrait};
 
 fn main() {
-    println!("Bonjour Benjamin !\nJ'ai commenté partout proprement pour que tu puisses utiliser :\n> cargo doc --open\npour voir la documentation détaillé comme tu as demandé :D\n-------------------------");
+    println!("Bonjour Benjamin,\nBonne correction !");
+    println!("-------------------------");
 
     let filename = "cache_data.txt";
 
@@ -22,4 +23,12 @@ fn main() {
     println!("B ➡️  {:?}", cache.get(&"B".to_string()));
     println!("C ➡️  {:?}", cache.get(&"C".to_string()));
     println!("D ➡️  {:?}", cache.get(&"D".to_string()));
+
+    println!("-------------------------");
+    println!("Pour tester le code\n> cargo test");
+    println!("-------------------------");
+    println!("Pour mesurer les performances des opérations 'get' du cache, j'ai mis en place Criterion,\n> cargo bench\nHtml d'analyses dans target\\criterion");
+    println!("-------------------------");
+    println!("Pour générer la doc\n> cargo doc --open");
+    println!("-------------------------");
 }
